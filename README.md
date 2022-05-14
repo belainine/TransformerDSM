@@ -11,10 +11,6 @@ A novel sequence to sequence framework utilizes the **self-attention mechanism**
 
 The project support training and translation with trained model now.
 
-**BPE related parts are not yet fully tested.**
-
-If there is any suggestion or error, feel free to fire an issue to let me know. :)
-
 
 # Requirement
 - python 3.4+
@@ -57,7 +53,6 @@ python train.py -data_pkl m30k_deen_shr.pkl -log m30k_deen_shr -embs_share_weigh
 python translate.py -data_pkl m30k_deen_shr.pkl -model trained.chkpt -output prediction.txt
 ```
 
-## [(WIP)] WMT'17 Multimodal Translation: em-de w/ BPE 
 ### 1) Download and preprocess the data with bpe:
 
 > Since the interfaces is not unified, you need to switch the main function call from `main_wo_bpe` to `main`.
@@ -79,10 +74,6 @@ python train.py -data_pkl ./bpe_deen/bpe_vocab.pkl -train_path ./bpe_deen/deen-t
 # Performance
 ## Training
 
-<p align="center">
-<img src="https://imgur.com/rKeP1bb.png" width="400">
-<img src="https://imgur.com/9je3X6U.png" width="400">
-</p>
 
 - Parameter settings:
   - default parameter and optimizer settings
