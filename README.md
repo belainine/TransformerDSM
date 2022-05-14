@@ -33,11 +33,11 @@ python -m spacy download fr
 ```
 # DataSet 
 >  We used the machine translation tasks WMT 2014 English-German and English-French.
-The 2014 English-German (http://www.statmt sets. org/wmt14) dataset includes approximately 4.5 million sentence pairs for source vocabularies and target share nearly 37,000 words.
+The 2014 English-German (http://www.statmt sets.org/wmt14) dataset includes approximately 4.5 million sentence pairs for source vocabularies and target share nearly 37,000 words.
 
-> WMT 2014 English-French (http://www.statmt sets. org/wmt14) dataset consisting of approximately 40 million sentence pairs for source and target vocabularies share nearly 32,000 words. We used the Moses Parser to split the different sentences (https://www.nltk.org/\_modules/nltk/tokenize/moses.html).Input and output sentences used a maximum sequence length of 120.
+> WMT 2014 English-French (http://www.statmt sets.org/wmt14) dataset consisting of approximately 40 million sentence pairs for source and target vocabularies share nearly 32,000 words. We used the Moses Parser to split the different sentences (https://www.nltk.org/_modules/nltk/tokenize/moses.html). Input and output sentences used a maximum sequence length of 120.
 
-> Finally, each of the development (http://www.statmt.org/wmt14/dev.tgz) and test (http://www.statmt sets. org/wmt14/test-filtered.tgz) of the two translation tasks included 3,003 sentences.
+> Finally, each of the development (http://www.statmt.org/wmt14/dev.tgz) and test (http://www.statmtsets.org/wmt14/test-filtered.tgz) of the two translation tasks included 3,003 sentences.
 ### 1) Preprocess the data with torchtext and spacy.
 ```bash
 python preprocess.py -lang_src de -lang_trg en -share_vocab -save_data m30k_deen_shr.pkl
