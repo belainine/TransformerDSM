@@ -11,7 +11,7 @@ A novel sequence to sequence framework utilizes the **self-attention mechanism**
 
 The project support training and translation with trained model now.
 <p align="center">
-<img src="https://github.com/belainine/TransformerDSM/blob/main/TransformerFR.jpg" width="400">
+<img src="https://github.com/belainine/TransformerDSM/blob/main/TransformerFR.jpg" width="600">
 
 </p>
 
