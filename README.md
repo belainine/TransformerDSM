@@ -69,11 +69,10 @@ python preprocess.py -raw_dir /tmp/raw_deen -data_dir ./bpe_deen -save_data bpe_
 python train.py -data_pkl ./bpe_deen/bpe_vocab.pkl -train_path ./bpe_deen/deen-train -val_path ./bpe_deen/deen-val -log deen_bpe -embs_share_weight -proj_share_weight -label_smoothing -save_model trained -b 256 -warmup 128000 -epoch 400
 ```
 
-### 3) Test the model (not ready)
-- TODO:
-	- Load vocabulary.
-	- Perform decoding after the translation.
----
+### 3) Test the model
+```
+python translate.py -data_pkl m30k_deen_shr.pkl -model trained.chkpt -output prediction.txt
+```
 # Performance
 ## Training
 
@@ -86,11 +85,6 @@ python train.py -data_pkl ./bpe_deen/bpe_vocab.pkl -train_path ./bpe_deen/deen-t
 - Elapse per epoch (on NVIDIA GTX):
   - Training set: 7 days
   - Validation set: 2.011 minutes
-  
----
-# TODO
-  - Evaluation on the generated text.
-  - Attention weight plot.
 ---
 # Acknowledgement
 - The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
