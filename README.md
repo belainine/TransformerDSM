@@ -10,7 +10,10 @@ A novel sequence to sequence framework utilizes the **self-attention mechanism**
 > We used two models in the same source code (the basic model with DSM) with a parameter BSM = False which indicates the basic model, BSM = True indicates  the DSM model.
 
 The project support training and translation with trained model now.
+<p align="center">
+<img src="https://imgur.com/rKeP1bb.png" width="400">
 
+</p>
 
 # Requirement
 - python 3.4+
