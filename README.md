@@ -23,7 +23,11 @@ The project support training and translation with trained model now.
 - tqdm
 - dill
 - numpy
-
+- nltk
+- jiwer
+- tensorboardX
+- matplotlib
+- gensim
 
 # Usage
 
