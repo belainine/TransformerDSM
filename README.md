@@ -93,3 +93,4 @@ python translate.py -data_pkl m30k_deen_shr.pkl -model trained.chkpt -output pre
 # Acknowledgement
 - The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
 - The project structure, some scripts and the dataset preprocessing steps are heavily borrowed from (https://github.com/hyunwoongko/transformer).
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
