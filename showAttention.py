@@ -28,7 +28,7 @@ def showPlot(points):
     loc = ticker.MultipleLocator(base=0.2)
     ax.yaxis.set_major_locator(loc)
     plt.plot(points)
-
+# example of attention
 attentions=torch.tensor([[[[[0.0089, 0.0170, 0.0250, 0.0105, 0.0078, 0.0108, 0.0157],
            [0.0085, 0.0168, 0.0254, 0.0114, 0.0081, 0.0119, 0.0171],
            [0.0167, 0.0147, 0.0251, 0.0113, 0.0095, 0.0079, 0.0099],
