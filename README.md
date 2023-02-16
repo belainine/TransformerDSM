@@ -89,6 +89,19 @@ python translate.py -data_pkl m30k_deen_shr.pkl -model trained.chkpt -output pre
 - Elapse per epoch (on NVIDIA GTX):
   - Training set: 7 days
   - Validation set: 2.011 minutes
+  # Eval
+  - Evaluation on the generated text.
+  ```bash
+  python TransformerMDA/Translator.py corpus_name
+   ```
+   - Test Blue score
+ ```bash
+ python sacreBlueTest1.py corpus_name
+  ```
+  - Attention weight plot.
+```bash
+ python showAttention.py corpus_name
+ ```
 ---
 # Acknowledgement
 - The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
