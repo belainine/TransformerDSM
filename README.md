@@ -95,9 +95,9 @@ python translate.py -data_pkl m30k_deen_shr.pkl -model trained.chkpt -output pre
   python TransformerMDA/translate.py corpus_name
    ```
   - Attention weight plot.
-```bash
- python showAttention.py corpus_name
- ```
+  ```bash
+   python showAttention.py corpus_name
+   ```
 ---
 # Acknowledgement
 - The byte pair encoding parts are borrowed from [subword-nmt](https://github.com/rsennrich/subword-nmt/).
