@@ -92,12 +92,8 @@ python translate.py -data_pkl m30k_deen_shr.pkl -model trained.chkpt -output pre
   # Eval
   - Evaluation on the generated text.
   ```bash
-  python TransformerMDA/Translator.py corpus_name
+  python TransformerMDA/translate.py corpus_name
    ```
-   - Test Blue score
- ```bash
- python sacreBlueTest1.py corpus_name
-  ```
   - Attention weight plot.
 ```bash
  python showAttention.py corpus_name
